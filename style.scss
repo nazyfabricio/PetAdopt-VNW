@@ -6,7 +6,7 @@
 
 header {
   background-color: #1f2937;
-  height: 18vh;
+  height: 16vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,21 +17,58 @@ header {
     color: white;
     font-size: 0.9rem;
     font-weight: 500;
-    height: 4.5vh;
-    width: 4vw;
+    padding: 10px;
     border-radius: 8px;
     border-style: none;
     // 2ª opção para o tamanho do botão:
-    //Utilizar o padding ex.: padding: 2rem
+
+    /*  height: 4.5vh;
+    width: 4vw; */ //Para a responsividade, o padding fica mais fácil
   }
 }
 
 .banner {
-  border: solid;
+  background-color: yellow;
+  height: 80vh;
+  padding: 20px;
 }
 
+article {
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 #nomeDoPet {
   color: #f97415;
   font-weight: 700;
   font-size: 3rem;
+}
+
+//Galeria de  imagens
+
+.galeria {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pet {
+  border: solid pink;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .descricao,
+  .nome {
+    display: none;
+  }
+}
+
+.imgPet {
+  width: 50%;
+  height: 20vh;
+  border-radius: 100%;
 }
